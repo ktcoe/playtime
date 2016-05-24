@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+        h1 {
+            font-size:25px;
+            color: white;
+        }
+            
+        h2 {
+            font-size: 16px;
+            color:gray;
+            font-family:sans-serif;
+        }
+       
+       .heading {
+           width: 25%;
+           display: block;
+           position: relative;
+           border: 1px solid black;
+           padding:10px;
+           background-color: gray;
+        }
+       
+       p {
+           font-family: Helvetica;
+           color:green;
+           font-size:12px;
+        }
+        
+        </style>
+    </head>
+    
+<body>
+<div class="heading">
+    <h1><?php
+        $blurb = "Hello World is a classic in PHP";
+        echo "Hello World from Cloud 9!"
+        ?>
+    </h1>
+</div>
+
+<h2>
+    <?php echo $blurb; ?>
+</h2>
+
+<p>
+    <?php 
+        $x = 2;
+        $lorum = "Lorum Ipsum in PHP";
+            if ($x>1) {
+                echo $lorum;
+            } 
+            else {
+                echo "Null value";
+            }
+    ?></p>
+
+<h2>
+<script>
+   var blurb
+   blurb = "Hello World is a classic in javascript"
+   document.write (blurb)
+</script></h2>
+
+<p>
+<script>
+   var x
+   x = <?php echo 2; ?>
+   
+   var lorum
+   lorum = "Lorum Ipsum in Javascript"
+   if (x>1){
+       document.write(lorum)
+   }
+   else {
+       document.write("Null value in javascript")
+   }
+</script></p>
+
+</body>
+</html>
